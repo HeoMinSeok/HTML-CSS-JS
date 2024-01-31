@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find - kakao </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/swipe.css">
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span id="current-time"></span>
+    </div>
+    <div class="status-bar__column">
+      <span><i class="fa-solid fa-wifi"></i></span>
+      <span class="status_right"><i class="fa-solid fa-battery-full fa-lg"></i></span>
+    </div>
+  </div>
+  <header class="screen-header">
+    <h1 class="screen-header_title">찾기</h1>
+    <div class="screen-header_icons">
+      <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+      <span>
+        <a href="settings.html">
+          <i class=" fa-solid fa-gear fa-2x"></i>
+        </a>
+        <div class="point"></div>
+      </span>
+    </div>
+  </header>
+
+  <main class="main-screen">
+    <div class=" icon-row" style="margin: 0 40px 0 40px;">
+      <div class="icon-row_icon">
+        <a href="qr.html">
+          <i class="fa-solid fa-qrcode"></a></i>
+        <span>QR Code</span>
+        </a>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-regular fa-address-book"></i>
+        <span>Add by Contacts</span>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-solid fa-fingerprint"></i>
+        <span>Add by Id</span>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Invite</span>
+      </div>
+    </div>
+    <div class="recommended-friends">
+      <h6 class="recommended-friends_title">추천 친구</h6>
+      <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img
+                src="https://post-phinf.pstatic.net/MjAyMjEyMjVfMTE0/MDAxNjcxOTQwMDc0Mzc2.9Xz_BVje9hGhYg7BuCYDb8kdOCOIy5zJX6ymOoLWLMkg.M6fPwho4pat2XOAhWgx6M87lVdUI90h1WKXsgU22aUUg.JPEG/IMG_1526.jpg?type=w800_q75">
+            </div>
+
+            <div class="card__content">
+              <span class="card__title">김민지</span>
+              <span class="card__name">뉴진스</span>
+              <button class="card__btn">친구 추가</button>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="https://cdn.topstarnews.net/news/photo/202308/15379917_1159014_4221.jpg">
+            </div>
+
+            <div class="card__content">
+              <span class="card__title">강해린</span>
+              <span class="card__name">뉴진스</span>
+              <button class="card__btn">친구 추가</button>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img
+                src="https://mblogthumb-phinf.pstatic.net/MjAyMjA4MDdfNDYg/MDAxNjU5ODQ2MDI5NTY3.0IyUGm6X6ZA5DkPHjpo4MV0R368o7Co44txwtGNz4Lgg.VGjeaOY0qXcv-FlpDGnP9X0VmnOtGc7_UX2tSxqkqD4g.JPEG.sdbuyer/%EF%BB%BF%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C_%EA%B9%80%EC%B1%84%EC%9B%90_%ED%8C%A8%EC%85%98%EC%9C%BC%EB%A1%9C_%EB%B3%B4%EB%8A%94_%ED%9E%99%ED%95%9C_%EC%97%AC%EC%9E%90_%EC%97%AC%EB%A6%84_%EC%BD%94%EB%94%94_1.JPG?type=w800">
+            </div>
+
+            <div class="card__content">
+              <span class="card__title">김채원</span>
+              <span class="card__name">르세라핌</span>
+              <button class="card__btn">친구 추가</button>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img
+                src="https://phinf.wevpstatic.net/MjAyMzAxMzFfMTEz/MDAxNjc1MDkxMzczMTA4.xjMcFUJGfMp5bRAj5_IWiygjrYwQ-MlPVXZ3vETZpPYg.QEmhq3A3jbPlCaDvBT_vsdSmY4MupFkIOPvyNnbKYtQg.JPEG/image.jpg">
+            </div>
+
+            <div class="card__content">
+              <span class="card__title">카즈하</span>
+              <span class="card__name">르세라핌</span>
+              <button class="card__btn">친구 추가</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="open-chat">
+      <div class="open-chat_header">
+        <h4 class="open-chat_title">오픈 채팅</h4>
+        <span> 오픈 채팅 홈으로 가기 <i class="fa-solid fa-chevron-right fa-xs"></i></span>
+      </div>
+      <div class="open-post">
+        <div class="open-post_column">
+          <h5 class="open-post-title">#뉴진스</h5>
+          <h6 class="open-post-hashtags">#newjeans#bunnies#hypeboy</h6>
+          <div class="open-post-members">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjK3dWX2Eq06BgIdoWcLHTVCI3TMLfEQd0vppIjqtwQ&s">
+            <span class="open-post-member-count">802명</span>
+            <div class="divider"></div>
+            <span class="open-post-member-status">참여중</span>
+          </div>
+        </div>
+        <div class="open-post_column">
+          <div class="open-post-photo">
+            <img src="https://wimg.mk.co.kr/news/cms/202307/06/news-p.v1.20230706.bf5e0efeb4b24b5aada55858d65aa24a.jpg">
+            <div class="open-post-heart-count fa-xs">
+              <i class="fa-solid fa-heart"></i>
+              <span>666</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="open-chat">
+      <div class="open-post">
+        <div class="open-post_column">
+          <h5 class="open-post-title">#레드벨벳</h5>
+          <h6 class="open-post-hashtags">#redvelvet#reveluv#joy</h6>
+          <div class="open-post-members">
+            <img
+              src="https://obj-sg.the1.wiki/d/47/ca/9e4adbc576af443a0ff7b818bf3327245e1f8268f6042fbccd58e584830564a5.jpg">
+            <span class="open-post-member-count">777명</span>
+            <div class="divider"></div>
+            <span class="open-post-member-status">참여중</span>
+          </div>
+        </div>
+        <div class="open-post_column">
+          <div class="open-post-photo">
+            <img src="https://image.bugsm.co.kr/album/images/500/201847/20184771.jpg">
+            <div class="open-post-heart-count fa-xs">
+              <i class="fa-solid fa-heart"></i>
+              <span>323</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <nav class="nav">
+    <ul class="nav_list">
+      <li class="nav_btn">
+        <a class="nav_link" href="friends.html">
+          <i class="fa-regular fa-user fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="chats.html">
+          <span class="nav_notification badge">1</span>
+          <i class="fa-regular fa-comment fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="find.html">
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="more.html">
+          <span class="nav_dot"></span>
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    function clock() {
+
+      let today = new Date();
+      let H = today.getHours();
+      let M = today.getMinutes();
+      let receiveH = String(H - 2);
+      let receiveM = String(M);
+
+
+      document.getElementById('current-time').innerHTML = String(H).padStart(2, "0") + ":" + String(M).padStart(2, "0");
+      document.getElementById('receiveMessage').innerHTML = String(receiveH).padStart(2, "0") + ":" + String(receiveM).padStart(2, "0");
+    }
+    clock();
+    setInterval(clock, 1000);
+
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/98b30ceabb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

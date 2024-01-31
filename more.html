@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More - kakao </title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span id="current-time"></span>
+    </div>
+    <div class="status-bar__column">
+      <span><i class="fa-solid fa-wifi"></i></span>
+      <span class="status_right"><i class="fa-solid fa-battery-full fa-lg"></i></span>
+    </div>
+  </div>
+  <header class="screen-header">
+    <h1 class="screen-header_title">찾기</h1>
+    <div class="screen-header_icons">
+      <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+      <span><i class="fa-solid fa-music fa-2x"></i></span>
+      <span>
+        <a href="settings.html">
+          <i class=" fa-solid fa-gear fa-2x"></i></a>
+        <div class="point"></div>
+      </span>
+    </div>
+  </header>
+
+  <main class="main-screen more-screen">
+    <div class="user-component">
+      <div class="user-component_column">
+        <img
+          src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/07/02/9c8a4064-6ae8-4c8e-b09f-010e112ad6e1.jpg"
+          class="user-component_avatar user-component_avatar--xl">
+        <div class="user-component_text">
+          <h4 class="user-component_title">카리나</h4>
+          <h6 class="user-component-subtitle">+82 10-4131-1121</h6>
+        </div>
+      </div>
+      <div class="user-component_column">
+        <div style="margin-right: 25px;">
+          <i class="fa-regular fa-clipboard fa-2x"></i>
+        </div>
+      </div>
+    </div>
+    <div class=" icon-row">
+      <div class="icon-row_icon">
+        <i class="fa-regular fa-calendar-check"></i>
+        <span>Calendar</span>
+        </a>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-solid fa-box-archive"></i>
+        <span>Talk Drive</span>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-solid fa-face-surprise"></i>
+        <span>Emoticons</span>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-solid fa-brush"></i>
+        <span>Themes</span>
+      </div>
+    </div>
+    <div class=" icon-row second-row">
+      <div class="icon-row_icon">
+        <i class="fa-solid fa-piggy-bank"></i>
+        <span>Account</span>
+      </div>
+      <div class="icon-row_icon second-row">
+        <i class="fa-solid fa-comment-medical"></i>
+        <span>Openchat</span>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-regular fa-address-book" style="opacity: 0;"></i>
+        <span style="opacity: 0;">Account</span>
+      </div>
+      <div class="icon-row_icon">
+        <i class="fa-regular fa-address-book" style="opacity: 0;;"></i>
+        <span style="opacity: 0;">Account</span>
+      </div>
+    </div>
+    <div class="more-suggestions">
+      <h4 class="more-suggestions_title">Suggestions</h4>
+      <div class="more-suggestions_icons">
+        <div class="more-suggestions_icon">
+          <div class="more-suggestions_icon-image">
+            <img
+              src="https://lh3.googleusercontent.com/X-ilCPRjv76Fh9hSbL3Yh9hI2kihMhNno53UoGGb_-AOl7pCfOwAqeVzYaeis_GaKaWT">
+          </div>
+          <span class="more-suggestions_icon-text">Kakao Story</span>
+        </div>
+        <div class="more-suggestions_icon">
+          <div class="more-suggestions_icon-image">
+            <img src="https://item.kakaocdn.net/do/5469fada1e5b71fc635a5fe11730ba468f324a0b9c48f77dbce3a43bd11ce785">
+          </div>
+          <span class="more-suggestions_icon-text">Kakao friends</span>
+        </div>
+        <div class="more-suggestions_icon">
+          <div class="more-suggestions_icon-image">
+            <img src="https://t1.daumcdn.net/crms/symbol_img/symbol_%EC%B9%B4%EC%B9%B4%EC%98%A4%EC%A7%80%EA%B0%91.png">
+          </div>
+          <span class="more-suggestions_icon-text">Kakao Wallet</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <nav class=" nav">
+    <ul class="nav_list">
+      <li class="nav_btn">
+        <a class="nav_link" href="friends.html">
+          <i class="fa-regular fa-user fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="chats.html">
+          <span class="nav_notification badge">1</span>
+          <i class="fa-regular fa-comment fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="find.html">
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="more.html">
+          <span class="nav_dot"></span>
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    function clock() {
+
+      let today = new Date();
+      let H = today.getHours();
+      let M = today.getMinutes();
+      let receiveH = String(H - 2);
+      let receiveM = String(M);
+
+      document.getElementById('current-time').innerHTML = String(H).padStart(2, "0") + ":" + String(M).padStart(2, "0");
+
+    }
+    clock();
+    setInterval(clock, 1000);
+
+  </script>
+  <script src="https://kit.fontawesome.com/98b30ceabb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

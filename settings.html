@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - kakao </title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span id="current-time"></span>
+    </div>
+    <div class="status-bar__column">
+      <span><i class="fa-solid fa-wifi"></i></span>
+      <span class="status_right"><i class="fa-solid fa-battery-full fa-lg"></i></span>
+    </div>
+  </div>
+
+  <header class="alt-header">
+    <div class="alt-header_column">
+      <a href="more.html">
+        <i class="fa-solid fa-angle-left fa-3x"></i>
+      </a>
+    </div>
+    <div class="alt-header_column">
+      <h1 class="alt-header_title">설정</h1>
+    </div>
+    <div class="alt-header_column">
+      <span>
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+      </span>
+    </div>
+  </header>
+
+
+  <main class="main-screen" style="margin-left: 25px;">
+    <ul class="settings-list">
+      <li class="settings-setting">
+        <div class="settings_setting-column">
+          <i class="fa-solid fa-bullhorn"></i>
+          <span>Notices</span>
+        </div>
+        <div class="settings_setting-column"></div>
+      </li>
+      <li class="settings-setting">
+        <div class="settings_setting-column">
+          <i class="fa-solid fa-flask"></i>
+          <span>Kakao Lab</span>
+        </div>
+        <div class="settings_setting-column"></div>
+      </li>
+      <li class="settings-setting">
+        <div class="settings_setting-column">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>Version</span>
+        </div>
+        <div class="settings_setting-column" style="margin-right: 25px;">Latest Version</div>
+      </li>
+    </ul>
+  </main>
+
+  <nav class=" nav">
+    <ul class="nav_list">
+      <li class="nav_btn">
+        <a class="nav_link" href="friends.html">
+          <i class="fa-regular fa-user fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="chats.html">
+          <span class="nav_notification badge">1</span>
+          <i class="fa-regular fa-comment fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="find.html">
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="more.html">
+          <span class="nav_dot"></span>
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    function clock() {
+
+      let today = new Date();
+      let H = today.getHours();
+      let M = today.getMinutes();
+      let receiveH = String(H - 2);
+      let receiveM = String(M);
+
+
+      document.getElementById('current-time').innerHTML = String(H).padStart(2, "0") + ":" + String(M).padStart(2, "0");
+      document.getElementById('receiveMessage').innerHTML = String(receiveH).padStart(2, "0") + ":" + String(receiveM).padStart(2, "0");
+    }
+    clock();
+    setInterval(clock, 1000);
+
+  </script>
+  <script src="https://kit.fontawesome.com/98b30ceabb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

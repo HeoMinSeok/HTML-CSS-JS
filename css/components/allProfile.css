@@ -1,0 +1,89 @@
+.whole-body {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(206, 206, 206);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile-top {
+  height: 600px;
+  position: static;
+  text-align: center;
+  background-color: rgb(255, 155, 157);
+  background-repeat: round;
+}
+.gray-box {
+  background-color: rgb(208, 180, 180);
+  border-radius: 10px;
+  border: none;
+  width: 30px;
+}
+.profile-top > div {
+  margin-top: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.profile-center {
+  left: 165px;
+  margin-top: -80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.profile-center > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+.profile-bottom {
+  height: 200px;
+  background-color: white;
+  margin-top: auto;
+}
+.profile-bottom > div {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.chat-myself {
+  font-size: 13px;
+  letter-spacing: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat-image {
+  background-size: 50px 50px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+.manage-myprofile {
+  font-size: 13px;
+  letter-spacing: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 50px auto 50px;
+}
+.mmp-image {
+  background-size: 50px 50px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+.kakaostory {
+  font-size: 13px;
+  letter-spacing: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

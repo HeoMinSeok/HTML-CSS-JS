@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends - kakao </title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span id="current-time"></span>
+    </div>
+    <div class="status-bar__column">
+      <span><i class="fa-solid fa-wifi"></i></span>
+      <span class="status_right"><i class="fa-solid fa-battery-full fa-lg"></i></span>
+    </div>
+  </div>
+  <header class="screen-header">
+    <h1 class="screen-header_title">친구</h1>
+    <div class="screen-header_icons">
+      <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+      <span><i class="fa-solid fa-music fa-2x"></i></span>
+      <span>
+        <a href="settings.html">
+          <i class="fa-solid fa-gear fa-2x"></i>
+        </a>
+      </span>
+    </div>
+  </header>
+
+  <a id="friends-display-link">
+    <i class="fa-solid fa-circle-info"></i> 톡 설명서
+    <i class="fa-solid fa-chevron-right fa-xs"></i>
+  </a>
+
+  <main class="friends-screen">
+    <div class="user-component">
+      <div class="user-component_column">
+        <img
+          src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/07/02/9c8a4064-6ae8-4c8e-b09f-010e112ad6e1.jpg"
+          class="user-component_avatar user-component_avatar--xl">
+        <div class="user-component_text">
+          <h4 class="user-component_title">카리나</h4>
+          <!-- <h6 class="user-component-subtitle">가나다라</h6> -->
+        </div>
+      </div>
+      <div class="user-component_column"></div>
+    </div>
+    <div class="friends-screen_channel">
+      <div class="friends-screen_channel-header">
+        <span style="margin-left: 25px;">채널</span>
+        <i class="fa-solid fa-chevron-up fa-xs"></i>
+      </div>
+      <div class="user-component">
+        <div class="user-component_column">
+          <img
+            src="https://play-lh.googleusercontent.com/cf3DwPLbS8Z55sDvUSTQ6PL1goPdm8KbZ81g4TEUAaeUh5LDhkzdjxKQ2RX6BGpv0x4"
+            class="user-component_avatar user-component_avatar--sm">
+          <div class="user-component_text">
+            <h4 class="user-component_title user-component_title--not-bold">채널</h4>
+          </div>
+        </div>
+        <div class="user-component_column" style="margin-top: 40px;">
+          <div>
+            <span>2</span>
+            <i class="fa-solid fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="friends-screen_channel">
+      <div class="friends-screen_channel-header">
+        <span style="margin-left: 25px;">친구</span>
+        <i class="fa-solid fa-chevron-up fa-xs"></i>
+      </div>
+      <div class="user-component">
+        <div class="user-component_column">
+          <a href="profile.html">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlI07e5eZLqcSII9OePG3AixoYjoyMH1IzoA&usqp=CAU"
+              class="user-component_avatar user-component_avatar--sm">
+          </a>
+          <div class="user-component_text">
+            <h4 class="user-component_title user-component_title--not-bold">윈터</h4>
+          </div>
+        </div>
+        <div class="user-component_column" style="margin-top: 40px;"></div>
+      </div>
+      <div class="user-component">
+        <div class="user-component_column">
+          <a href="profile2.html">
+            <img src="https://cdn.pikicast.com/pikicast/2023/06/29153340/0-1-%EB%8B%9D%EB%8B%9D-%EB%A7%90%ED%88%AC.jpg"
+              class="user-component_avatar user-component_avatar--sm">
+          </a>
+          <div class="user-component_text">
+            <h4 class="user-component_title user-component_title--not-bold">닝닝</h4>
+          </div>
+        </div>
+        <div class="user-component_column" style="margin-top: 40px;"></div>
+      </div>
+      <div class="user-component">
+        <div class="user-component_column">
+          <a href="profile3.html">
+            <img src="https://image.blip.kr/v1/file/bad5f0e28e664e9316632e402c6c8f63"
+              class="user-component_avatar user-component_avatar--sm">
+          </a>
+          <div class="user-component_text">
+            <h4 class="user-component_title user-component_title--not-bold">지젤</h4>
+          </div>
+        </div>
+        <div class="user-component_column" style="margin-top: 40px;"></div>
+      </div>
+  </main>
+
+  <nav class="nav">
+    <ul class="nav_list">
+      <li class="nav_btn">
+        <a class="nav_link" href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="chats.html">
+          <span class="nav_notification badge">1</span>
+          <i class="fa-regular fa-comment fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="more.html">
+          <span class="nav_dot"></span>
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div id="splash-screen">
+    <i class="fa-solid fa-comment"></i>
+  </div>
+  <script>
+    function clock() {
+
+      let today = new Date();
+      let H = today.getHours();
+      let M = today.getMinutes();
+      let receiveH = String(H - 2);
+      let receiveM = String(M);
+
+
+      document.getElementById('current-time').innerHTML = String(H).padStart(2, "0") + ":" + String(M).padStart(2, "0");
+      document.getElementById('receiveMessage').innerHTML = String(receiveH).padStart(2, "0") + ":" + String(receiveM).padStart(2, "0");
+    }
+    clock();
+    setInterval(clock, 1000);
+  </script>
+  <script src="https://kit.fontawesome.com/98b30ceabb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

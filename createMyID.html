@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lnag="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KaKao : 회원가입</title>
+    <link rel="stylesheet" href="css/createMyID.css">
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span id="current-time"></span>
+        </div>
+        <div class="status-bar__column">
+            <span><i class="fa-solid fa-wifi"></i></span>
+            <span class="status_right"><i class="fa-solid fa-battery-full fa-lg"></i></span>
+        </div>
+    </div>
+    <!-- header -->
+    <div id="header">
+        <a href="createMyID.html" target="_blank">
+            <img src="https://i.namu.wiki/i/GmQozcg0lMGkI_NXkm04l-14hJIGnxYdhfe98DUlKGHVunjQtRkn0ZaGgXI1DEdGzHCzUsJsLbEZlMveOEnoRQ.svg"
+                id="logo"></a>
+    </div>
+
+
+    <!-- wrapper -->
+    <div id="wrapper">
+        <!-- content-->
+        <div id="content">
+            <!-- ID -->
+            <div>
+                <h3 class="join_title">
+                    <label for="id">카카오계정 이메일</label>
+                </h3>
+                <span class="box int_id">
+                    <input type="text" id="id" class="int" maxlength="20" placeholder="Kakao ID">
+                    <span class="step_url">@daum.com</span>
+                </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- PW1 -->
+            <div>
+                <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
+                <span class="box int_pass">
+                    <input type="text" id="pswd1" class="int" maxlength="20" placeholder="*******">
+                    <span id="alertTxt">사용불가</span>
+                    <img src="images/m_icon_pass.png" id="pswd1_img1" class="pswdImg">
+                </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- PW2 -->
+            <div>
+                <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
+                <span class="box int_pass_check">
+                    <input type="text" id="pswd2" class="int" maxlength="20" placeholder="*******">
+                    <img src="images/m_icon_check_disable.png" id="pswd2_img1" class="pswdImg">
+                </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- NAME -->
+            <div>
+                <h3 class="join_title"><label for="name">이름</label></h3>
+                <span class="box int_name">
+                    <input type="text" id="name" class="int" maxlength="20">
+                </span>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- BIRTH -->
+            <div>
+                <h3 class="join_title"><label for="yy">생년월일</label></h3>
+
+                <div id="bir_wrap">
+                    <!-- BIRTH_YY -->
+                    <div id="bir_yy">
+                        <span class="box">
+                            <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                        </span>
+                    </div>
+
+                    <!-- BIRTH_MM -->
+                    <div id="bir_mm">
+                        <span class="box">
+                            <select id="mm" class="sel">
+                                <option>월</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </span>
+                    </div>
+
+                    <!-- BIRTH_DD -->
+                    <div id="bir_dd">
+                        <span class="box">
+                            <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                        </span>
+                    </div>
+
+                </div>
+                <span class="error_next_box"></span>
+            </div>
+
+            <!-- GENDER -->
+            <div>
+                <h3 class="join_title"><label for="gender">성별</label></h3>
+                <span class="box gender_code">
+                    <select id="gender" class="sel">
+                        <option>성별</option>
+                        <option value="M">남자</option>
+                        <option value="F">여자</option>
+                    </select>
+                </span>
+                <span class="error_next_box">필수 정보입니다.</span>
+            </div>
+
+            <!-- MOBILE -->
+            <div>
+                <h3 class="join_title"><label for="phoneNo">전화번호</label></h3>
+                <span class="box int_mobile">
+                    <input type="tel" id="mobile" class="int" maxlength="16" placeholder="전화번호 입력">
+                </span>
+                <span class="error_next_box"></span>
+            </div>
+
+
+            <!-- JOIN BTN-->
+            <div class="btn_area">
+                <a href="loginKakao.html">
+                    <button type=submit" id="btnJoin" onclick="return login()">
+
+                        <span>가입하기</span>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+        <!-- content-->
+
+    </div>
+
+    <!-- wrapper -->
+    <script src="js/createMyID.js"></script>
+    <script>
+        function clock() {
+
+            let today = new Date();
+            let H = today.getHours();
+            let M = today.getMinutes();
+            let receiveH = String(H - 2);
+            let receiveM = String(M);
+
+
+            document.getElementById('current-time').innerHTML = String(H).padStart(2, "0") + ":" + String(M).padStart(2, "0");
+            document.getElementById('receiveMessage').innerHTML = String(receiveH).padStart(2, "0") + ":" + String(receiveM).padStart(2, "0");
+        }
+        clock();
+        setInterval(clock, 1000);
+        function login() {
+            var id = $("#id").val();
+            if (id == "" || idlength < 1) {
+                alert("빈 칸이 있습니다.");
+                return false;
+            }
+            else {
+                submit();
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/98b30ceabb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

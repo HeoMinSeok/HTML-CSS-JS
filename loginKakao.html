@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaKao </title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span id="current-time"></span>
+    </div>
+    <div class="status-bar__column">
+      <span><i class="fa-solid fa-wifi"></i></span>
+      <span class="status_right"><i class="fa-solid fa-battery-full fa-lg"></i></span>
+    </div>
+  </div>
+
+  <header class="welcome-header">
+    <h1 class="welcome-header_title">kakao</h1>
+    <p class="welcome-header_text">
+      계정 정보 입력으로 로그인 해보세요.
+    </p>
+  </header>
+
+  <form action="friends.html" method="get" id="login-form">
+    <input name="username" type="text" placeholder="카카오메일 아이디, 이메일, 전화번호">
+    <input name="password" type="password" placeholder="비밀번호">
+    <input type="submit" value="로그인">
+    <span class="select_a">
+      <a href="createMyID.html">회원가입</a>
+      <a href="#">카카오계정</a>
+      <a href="#">비밀번호 찾기</a>
+    </span>
+  </form>
+  <script>
+    function clock() {
+
+      let today = new Date();
+      let H = today.getHours();
+      let M = today.getMinutes();
+      let receiveH = String(H - 2);
+      let receiveM = String(M);
+
+
+      document.getElementById('current-time').innerHTML = String(H).padStart(2, "0") + ":" + String(M).padStart(2, "0");
+      document.getElementById('receiveMessage').innerHTML = String(receiveH).padStart(2, "0") + ":" + String(receiveM).padStart(2, "0");
+    }
+    clock();
+    setInterval(clock, 1000);
+  </script>
+  <script src="https://kit.fontawesome.com/98b30ceabb.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

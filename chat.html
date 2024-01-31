@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with 윈터 - kakao </title>
+</head>
+
+<body id="chat-screen">
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span id="current-time"></span>
+    </div>
+    <div class="status-bar__column">
+      <span><i class="fa-solid fa-wifi"></i></span>
+      <span class="status_right"><i class="fa-solid fa-battery-full fa-lg"></i></span>
+    </div>
+  </div>
+
+  <header class="alt-header">
+    <div class="alt-header_column">
+      <a href="chats.html">
+        <i class="fa-solid fa-angle-left fa-3x"></i>
+      </a>
+    </div>
+    <div class="alt-header_column">
+      <h1 class="alt-header_title">윈터</h1>
+    </div>
+    <div class="alt-header_column">
+      <span>
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </span>
+    </div>
+  </header>
+
+
+  <main class="main-screen main-chat">
+    <div class="chat_timestamp" style="margin: 0 25px 25px 25px;">
+      Friday, 1월 12일, 2023
+    </div>
+    <div class="message-row">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlI07e5eZLqcSII9OePG3AixoYjoyMH1IzoA&usqp=CAU">
+      <div class="message-row_content">
+        <span class="message_author">윈터</span>
+        <div class="message_info">
+          <span class="message_bubble">지민아 ! 포트폴리오 작성은 다 했니? 1월 11일 제출이야</span>
+          <span class="message_time">21:27</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-row message-row--own">
+      <div class="message-row_content">
+        <div class="message_info">
+          <span class="message_bubble" style="margin-right: 20px;">한참 남았어 ㅠ.ㅠ</span>
+          <span class="message_time">21:27</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <form class="reply">
+    <div class="reply_column">
+      <i class="fa-regular fa-square-plus fa-2x"></i>
+    </div>
+    <div class="reply_column">
+      <input type="text" placeholder="Write a message...">
+      <i class="fa-regular fa-face-smile-wink fa-2x"></i>
+      <button>
+        <i class="fa-solid fa-arrow-up fa-2x"></i>
+      </button>
+    </div>
+  </form>
+
+
+  <script>
+    function clock() {
+
+      let today = new Date();
+      let H = today.getHours();
+      let M = today.getMinutes();
+      let receiveH = String(H - 2);
+      let receiveM = String(M);
+
+
+      document.getElementById('current-time').innerHTML = String(H).padStart(2, "0") + ":" + String(M).padStart(2, "0");
+      document.getElementById('receiveMessage').innerHTML = String(receiveH).padStart(2, "0") + ":" + String(receiveM).padStart(2, "0");
+    }
+    clock();
+    setInterval(clock, 1000);
+
+  </script>
+  <script src="https://kit.fontawesome.com/98b30ceabb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
